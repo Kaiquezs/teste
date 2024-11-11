@@ -254,8 +254,3 @@ function calcularValor(valor){
         pedido.push(info);
     }
 }
-
-window.addEventListener("beforeunload", function (event) {
-    this.localStorage.removeItem("pedido");
-    this.localStorage.removeItem("total");
-});
