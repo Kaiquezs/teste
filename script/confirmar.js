@@ -21,4 +21,3 @@ const buttonAlert = document.getElementById("btn-confirmar");
         this.localStorage.removeItem("pedido");
         this.localStorage.removeItem("total");
     });
-    
