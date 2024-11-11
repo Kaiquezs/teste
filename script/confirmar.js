@@ -14,10 +14,12 @@ const buttonAlert = document.getElementById("btn-confirmar");
     var array = [];
 
     textoPedido.innerHTML = "<strong>Pedido: </strong>"+pedidos;
-    textoTotal.innerHTML = "<strong>Total: </strong>"+total;
+    textoTotal.innerHTML = "<strong>Total a pagar: </strong>"+total;
     texto.innerHTML = "<strong>Nome</strong>: "+nome;
 
     window.addEventListener("beforeunload", function (event) {
         this.localStorage.removeItem("pedido");
         this.localStorage.removeItem("total");
+        this.localStorage.removeItem("endereco");
+        this.localStorage.removeItem("telefone");
     });
